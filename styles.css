@@ -1,0 +1,109 @@
+body {
+    background-color: #f5f5dc;
+    color: #002d72;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    text-align: center;
+    padding: 40px;
+    background: #000000;
+    border-bottom: 4px solid #ffd700;
+}
+
+.logo img {
+    max-width: 200px;
+    height: auto;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 40px;
+}
+
+.car {
+    margin: 30px;
+    padding: 20px;
+    border: 2px solid #ffd700;
+    border-radius: 12px;
+    background: #ffffff;
+    width: 350px;
+    text-align: center;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.car:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.2);
+}
+
+.car img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+}
+
+.car button {
+    padding: 12px 24px;
+    background: #ffd700;
+    color: #002d72;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: background 0.3s;
+}
+
+.car button:hover {
+    background: #e0a800;
+}
+
+.pop-up {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    max-width: 700px;
+    padding: 30px;
+    background: #ffffff;
+    color: #002d72;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    border-radius: 12px;
+    text-align: center;
+    position: relative;
+}
+
+.pop-up.active {
+    display: block;
+}
+
+.pop-up .close {
+    cursor: pointer;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 2em;
+    color: #002d72;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #000000;
+    color: #ffd700;
+    border-top: 4px solid #ffd700;
+}
+
+footer a {
+    color: #ffd700;
+    text-decoration: none;
+    margin: 0 10px;
+}
