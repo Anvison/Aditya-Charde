@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BBT Luxury Cars</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="https://cdn.bigboytoyz.com/new-version/assets/images/bbt-logo.png" alt="BBT Logo">
+        </div>
+    </header>
+
+    <main>
+        <div class="car">
+            <img src="https://media.gettyimages.com/id/513178714/photo/geneva-switzerland-a-bugatti-chiron-model-is-displayed-during-the-press-day-of-the-86th-geneva.jpg?s=612x612&w=0&k=20&c=Tyc449VSEl_oB-7RrL9LMyylj4hUD358wFObHoQpzC8=" alt="Bugatti Chiron Super Sport 300+">
+            <button onclick="showPopUp('chiron')">More Info</button>
+        </div>
+        <div class="car">
+            <img src="https://media.gettyimages.com/id/948944388/photo/la-ferrari-812-superfast-pr%C3%A9sent%C3%A9e-en-premi%C3%A8re-mondiale-dans-le-cadre-du-salon-international.jpg?s=612x612&w=0&k=20&c=N5eH2Q8tAG4r3_BMjXUeq9QgCQWBziY6qrtJRb7KMuA=" alt="Ferrari SF90 Stradale">
+            <button onclick="showPopUp('sf90')">More Info</button>
+        </div>
+        <div class="car">
+            <img src="https://media.gettyimages.com/id/966580264/photo/a-picture-taken-on-june-3-2018-shows-a-2018-model-rolls-royce-cullinan-ultra-luxury-sports.jpg?s=612x612&w=0&k=20&c=5NxL07Tu5wODrqlz8USZqTVY2AEJN6yfo3jqGfR9VhU=" alt="Rolls-Royce Phantom">
+            <button onclick="showPopUp('phantom')">More Info</button>
+        </div>
+        <div class="car">
+            <img src="https://media.gettyimages.com/id/2085877529/photo/shanghai-china-march-18-2024-a-promotional-event-for-the-porsche-911-sports-car-is-held-at-a.jpg?s=612x612&w=0&k=20&c=GHWdJBZHDgIRcF3-BBS1vkSbKQUnN3icFb1bNTtWey4=" alt="Porsche 918 Spyder">
+            <button onclick="showPopUp('918spyder')">More Info</button>
+        </div>
+    </main>
+
+    <div id="chiron" class="pop-up">
+        <span class="close" onclick="hidePopUp('chiron')">&times;</span>
+        <h2>Bugatti Chiron Super Sport 300+</h2>
+        <p><strong>Price:</strong> $3,900,000</p>
+        <p><strong>Horsepower:</strong> 1,577 hp</p>
+        <p><strong>Torque:</strong> 1,180 lb-ft</p>
+        <p><strong>Top Speed:</strong> 304 mph</p>
+        <p><strong>0-60 mph:</strong> 2.4 seconds</p>
+        <p><strong>Engine Type:</strong> 8.0L Quad-Turbo W16</p>
+        <p><a href="#">Contact Us</a></p>
+    </div>
+
+    <div id="sf90" class="pop-up">
+        <span class="close" onclick="hidePopUp('sf90')">&times;</span>
+        <h2>Ferrari SF90 Stradale</h2>
+        <p><strong>Price:</strong> $625,000</p>
+        <p><strong>Horsepower:</strong> 986 hp</p>
+        <p><strong>Torque:</strong> 590 lb-ft</p>
+        <p><strong>Top Speed:</strong> 211 mph</p>
+        <p><strong>0-60 mph:</strong> 2.5 seconds</p>
+        <p><strong>Engine Type:</strong> 4.0L Twin-Turbo V8 + 3 Electric Motors</p>
+        <p><a href="#">Contact Us</a></p>
+    </div>
+
+    <div id="phantom" class="pop-up">
+        <span class="close" onclick="hidePopUp('phantom')">&times;</span>
+        <h2>Rolls-Royce Phantom</h2>
+        <p><strong>Price:</strong> $460,000</p>
+        <p><strong>Horsepower:</strong> 563 hp</p>
+        <p><strong>Torque:</strong> 664 lb-ft</p>
+        <p><strong>Top Speed:</strong> 155 mph</p>
+        <p><strong>0-60 mph:</strong> 5.1 seconds</p>
+        <p><strong>Engine Type:</strong> 6.75L V12</p>
+        <p><a href="#">Contact Us</a></p>
+    </div>
+
+    <div id="918spyder" class="pop-up">
+        <span class="close" onclick="hidePopUp('918spyder')">&times;</span>
+        <h2>Porsche 918 Spyder</h2>
+        <p><strong>Price:</strong> $845,000</p>
+        <p><strong>Horsepower:</strong> 887 hp</p>
+        <p><strong>Torque:</strong> 1280 lb-ft</p>
+        <p><strong>Top Speed:</strong> 214 mph</p>
+        <p><strong>0-60 mph:</strong> 2.5 seconds</p>
+        <p><strong>Engine Type:</strong> 4.6L V8 + 2 Electric Motors</p>
+        <p><a href="#">Contact Us</a></p>
+    </div>
+
+    <footer>
+        <p><a href="#">About Us</a> | <a href="#">Privacy Policy</a> | <a href="#">Terms and Conditions</a> | <a href="#">Contact Information</a></p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
